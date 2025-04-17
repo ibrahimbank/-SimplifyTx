@@ -13,7 +13,7 @@ A modern transaction management dashboard built with React, TypeScript, and Mate
 
 ## Live Demo
 
-[View Live Demo]([https://your-demo-url.com](https://simplify-tx.vercel.app/))
+[View Live Demo]: https://simplify-tx.vercel.app/
 
 ## Installation
 
@@ -26,8 +26,9 @@ A modern transaction management dashboard built with React, TypeScript, and Mate
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/transaction-dashboard.git
-cd transaction-dashboard
+  a. git clone https://github.com/your-username/transaction-dashboard.git
+  
+  b. cd transaction-dashboard
 
 2. npm install
 # or
