@@ -26,9 +26,9 @@ A modern transaction management dashboard built with React, TypeScript, and Mate
 
 1. Clone the repository:
 
-  a. git clone https://github.com/your-username/transaction-dashboard.git
+  - git clone https://github.com/ibrahimbank/-SimplifyTx.git
   
-  b. cd transaction-dashboard
+  - cd transaction-dashboard
 
 2. npm install
 # or
@@ -45,35 +45,35 @@ yarn build
 
 ## Tech Stack
 1. Frontend:
-React 18
-TypeScript
-Material-UI 5
-Axios
+- React 18
+- TypeScript
+- Material-UI 5
+- Axios
 
 2. Build Tools:
 
-Webpack
-Babel
+- Webpack
+- Babel
 
 ## Project Structure ( Main Folders )
 src:
-  components:      
-     FilterSection 
-     TransactionCard 
-     Loader          
-     ErrorMessage   
-  pages: 
-     app
-     document
-     index 
-     new-transaction 
+  - components:      
+     - FilterSection 
+    - TransactionCard 
+     - Loader          
+     - ErrorMessage   
+  - pages: 
+     - app
+     - document
+     - index 
+     - new-transaction 
   
-  style:
-      globals.css
+  - style:
+      - globals.css
               
 
 License
-Distributed under the MIT License. See LICENSE for more information.
+- Distributed under the MIT License. See LICENSE for more information.
 
 
 Project Link: https://simplify-tx.vercel.app/
