@@ -34,6 +34,11 @@ A modern transaction management dashboard built with React, TypeScript, and Mate
 # or
 yarn install
 
+3. Use the text login details below
+
+ - Username: admin@example.com
+ - Password: password
+
 Open http://localhost:3000 to view in browser.
 
 
