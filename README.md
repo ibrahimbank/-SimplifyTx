@@ -43,6 +43,24 @@ npm run build
 # or
 yarn build
 
+## 🧪 Validation & Edge Cases
+✅ Amount must be a positive number.
+
+✅ Date must not be in the future.
+
+✅ Filters work with debounce to reduce re-renders.
+
+✅ API errors are gracefully handled.
+
+## 🧠 My Approach
+- Core UI & State: Built with React and Next.js using useState, useEffect for local state and Axios for API interaction.
+
+- Filters: Used a separate FilterSection component with controlled inputs and debounce logic.
+
+- Form Validation: Manually validated form inputs before posting data.
+
+- Routing: Used Next.js pages for index.js (transaction list) and new-transaction.js (create form).
+
 ## Tech Stack
 1. Frontend:
 - React 18
