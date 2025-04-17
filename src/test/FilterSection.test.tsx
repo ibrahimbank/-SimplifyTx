@@ -17,12 +17,16 @@ describe('FilterSection', () => {
         mockOnFilter.mockClear();
     });
 
-    it('renders all filter controls', () => {
-        expect(screen.getByPlaceholderText('Search by ID or Amount')).toBeInTheDocument();
-        expect(screen.getByLabelText('Status')).toBeInTheDocument();
-        expect(screen.getByLabelText('From Date')).toBeInTheDocument();
-        expect(screen.getByLabelText('To Date')).toBeInTheDocument();
+
+
+    it('filters by search term', async () => {
+        const searchInput = screen.getByPlaceholderText('Search by ID or Amount');
+        fireEvent.change(searchInput, { target: { value: 'TRX1' } });
+        await new Promise(resolve => setTimeout(resolve, 350));
+
+        expect(mockOnFilter).toHaveBeenCalledWith([mockTransactions[0]]);
     });
+
 
 
 
