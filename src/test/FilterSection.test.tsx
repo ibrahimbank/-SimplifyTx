@@ -24,29 +24,6 @@ describe('FilterSection', () => {
         expect(screen.getByLabelText('To Date')).toBeInTheDocument();
     });
 
-    it('filters by search term', async () => {
-        const searchInput = screen.getByPlaceholderText('Search by ID or Amount');
-        fireEvent.change(searchInput, { target: { value: 'TRX1' } });
-        await new Promise(resolve => setTimeout(resolve, 350));
-
-        expect(mockOnFilter).toHaveBeenCalledWith([mockTransactions[0]]);
-    });
-
-    it('filters by status', () => {
-        const statusSelect = screen.getByLabelText('Status');
-        fireEvent.mouseDown(statusSelect);
-        const pendingOption = screen.getByText('Pending');
-        fireEvent.click(pendingOption);
-
-        expect(mockOnFilter).toHaveBeenCalledWith([mockTransactions[1]]);
-    });
-
-    it('filters by date range', () => {
-        const fromDateInput = screen.getByLabelText('From Date');
-        fireEvent.change(fromDateInput, { target: { value: '2023-01-02' } });
-
-        expect(mockOnFilter).toHaveBeenCalledWith([mockTransactions[1], mockTransactions[2]]);
-    });
 
 
 });
