@@ -38,7 +38,6 @@ Open http://localhost:3000 to view in browser.
 
 ## Production Build
 
-Copy
 npm run build
 # or
 yarn build
@@ -56,7 +55,6 @@ Webpack
 Babel
 
 ## Project Structure ( Main Folders )
-Copy
 src:
   components:      
      FilterSection 
