@@ -65,6 +65,8 @@ yarn build
 - Form Validation: Manually validated form inputs before posting data.
 
 - Routing: Used Next.js pages for index.js (transaction list) and new-transaction.js (create form).
+  
+- For generating data, i used https://mockapi.io/, to create a mock data that i can use, base on the required data format
 
 ## Tech Stack
 1. Frontend:
