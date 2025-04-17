@@ -17,8 +17,6 @@ describe('FilterSection', () => {
         mockOnFilter.mockClear();
     });
 
-
-
     it('filters by search term', async () => {
         const searchInput = screen.getByPlaceholderText('Search by ID or Amount');
         fireEvent.change(searchInput, { target: { value: 'TRX1' } });
