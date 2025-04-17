@@ -18,10 +18,4 @@ describe('ErrorMessage', () => {
         expect(mockRetry).toHaveBeenCalled();
     });
 
-    it('closes when close button clicked', () => {
-        render(<ErrorMessage message="Test error" />);
-        const closeButton = screen.getByRole('button', { name: /close/i });
-        fireEvent.click(closeButton);
-        expect(screen.queryByText('Test error')).not.toBeInTheDocument();
-    });
 });

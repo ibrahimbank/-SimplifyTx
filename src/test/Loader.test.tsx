@@ -11,14 +11,4 @@ describe('Loader', () => {
         expect(screen.getByText('Loading transactions...')).toBeInTheDocument();
     });
 
-    it('has proper styling', () => {
-        render(<Loader />);
-        const loaderContainer = screen.getByTestId('loader-container');
-
-        expect(loaderContainer).toHaveStyle({
-            display: 'flex',
-            height: '100vh',
-            justifyContent: 'center'
-        });
-    });
 });

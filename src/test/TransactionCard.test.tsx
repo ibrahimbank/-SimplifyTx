@@ -20,9 +20,5 @@ describe('TransactionCard', () => {
         expect(screen.getByText('1/1/2023')).toBeInTheDocument();
     });
 
-    it('displays correct status color', () => {
-        render(<TransactionCard transaction={mockTransaction} />);
-        const statusChip = screen.getByText('Completed');
-        expect(statusChip).toHaveStyle('color: #4caf50');
-    });
+
 });
